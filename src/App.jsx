@@ -1,5 +1,5 @@
-import AccesoUsuarios from "./componentes/AccesoUsuarios";
-import "./styles/estilos.css";
+import AccesoUsuarios from "@components/AccesoUsuarios";
+import "styles/estilos.css";
 import correo from './media/mail.ico'
 import llave from './media/llave.ico'
 import logo from './media/M.png'
