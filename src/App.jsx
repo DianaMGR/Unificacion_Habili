@@ -1,4 +1,4 @@
-
+import AccesoUsuarios from "./componentes/AccesoUsuarios";
 import "./styles/estilos.css";
 import correo from './media/mail.ico'
 import llave from './media/llave.ico'
@@ -39,15 +39,4 @@ function App() {
 <footer></footer>
     </div>
     );
-    }
-function AccesoUsuarios(props){
-
-  return (
-    <div className="input-contenedor">
-    <img src={props.imagen} className="icon"/>
-    <input type="password" placeholder={props.nombre}/>
-             
-     </div>
-  )  
-}
-export default App;
+  } export default App;
