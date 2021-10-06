@@ -1,8 +1,4 @@
-
-import vistalogin from './pages/vistalogin';
-import index from './pages';
-import index from './pages';
-import './styles/estilos.css';
+import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
@@ -10,26 +6,27 @@ import {
   Link
 } from "react-router-dom";
 
-
-  
-function App() {
+import Index from 'pages/Index'; 
+import 'styles/estilos_i.css';  
+import Login from "./pages/Login";
+function App () {
   return (   
     <div className='App'>
-  <Router> 
-   <Switch>
-   <Route path='/registro'>
-     <registro />  
-     </Route>
-     <Route path='/vistalogin'>
-     <vistalogin />  
-     </Route>
-     <Route path='/'>
-     <index />  
-     </Route>
-     </Switch>  
-  </Router>  
-
-   </div>
+      <Router>
+       <Switch>
+          <Route path='/usuario'>
+            <Index/> 
+          </Route>
+          <Route path='/index'>
+            <Index/> 
+          </Route>
+          <Route path='/'>
+          <Login/>   
+          </Route>
+        </Switch>   
+      </Router> 
+      
+    </div>    
   );  
   }
    export default App;
