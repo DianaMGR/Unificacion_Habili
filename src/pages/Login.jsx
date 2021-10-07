@@ -27,14 +27,16 @@ function Vistalogin(){
             
             <span>O inicia sesion con </span>
            <div className='contenedor-gmail'>
-           <Link to='https://www.gmail.com/mail/help/intl/es/about.html?iframe '>  
-            
-               <img src={gmail} alt="imagen correo"/>
-            </Link>
-            </div> 
-            <a href='/index'>
-                <input type="submit" value="Continuar" className="button"/>
+           <a href='https://www.gmail.com/mail/help/intl/es/about.html?iframe '>  
+            <img src={gmail} alt="imagen correo"/>
             </a>
+            
+
+            </div> 
+            <Link to='/index'>
+           
+                <input type="submit" value="Continuar" className="button"/>
+            </Link>
             <p>Estas aceptando los terminos y condiciones al presionar el boton Continuar.</p>
             <p>¿Olvidaste tu Contraseña?</p>
          
