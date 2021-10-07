@@ -1,9 +1,12 @@
-import correo from 'media/mail.ico';
-import llave from 'media/llave.ico';
-import logo from 'media/M.png';
-import gmail from 'media/gmail.ico';
-import AccesoUsuarios from 'components/AccesoUsuarios';
-import {link} from 'react-router-dom'
+import correo from '../media/mail.ico';
+import llave from '../media/llave.ico';
+import logo from '../media/M.png';
+import gmail from '../media/gmail.ico';
+import AccesoUsuarios from '../components/AccesoUsuarios';
+import { Link } from 'react-router-dom';
+import Footer from '../components/Footer'
+
+
 
 function Vistalogin(){
 
@@ -24,9 +27,10 @@ function Vistalogin(){
             
             <span>O inicia sesion con </span>
            <div className='contenedor-gmail'>
-             <link to = 'https://www.gmail.com/mail/help/intl/es/about.html?iframe '> 
+           <Link to='https://www.gmail.com/mail/help/intl/es/about.html?iframe '>  
+            
                <img src={gmail} alt="imagen correo"/>
-             </link>
+            </Link>
             </div> 
             <a href='/index'>
                 <input type="submit" value="Continuar" className="button"/>
@@ -39,10 +43,10 @@ function Vistalogin(){
 </div>
 </form>
 </body>
-<footer></footer>
+<Footer/>
 </div>
 
-    )
+    );
 
 }
 

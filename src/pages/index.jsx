@@ -1,5 +1,8 @@
+import Footer from "../components/Footer"
+
 function Index(){
     return(
+   <div>     
     <body>
     <header>
     <nav class="navegacion">
@@ -22,7 +25,9 @@ function Index(){
             </ul>
             </nav>
         </header>
-    </body>    
+    </body>  
+    <Footer />  
+    </div>
     )
 }
 

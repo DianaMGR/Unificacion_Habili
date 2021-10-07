@@ -36,3 +36,49 @@ body {
 	position: relative;
 	display: inline-block;
 }
+
+
+
+.menu > li > a{
+	display: block;
+	padding: 15px 20px;
+	color: rgb(81, 79, 187);
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+.menu li a:hover{
+	color: #CE7D35;
+	transition: all .3s;
+}
+
+/* Submenu*/
+
+.submenu  {
+	position: absolute;
+	background: #333333;
+	width: 120%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+}
+
+.submenu li a{
+	display: block;
+	padding: 15px;
+	color: #fff;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+}
+
+
+.menu li:hover .submenu{
+	visibility: visible;
+	opacity: 1;
+}
+
+.logo{
+  height: 2px;
+  display: "block";
+ margin-top: 20px;
+}
