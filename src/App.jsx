@@ -5,6 +5,7 @@ import Admin from './pages/Admin';
 import Index from './pages/Index';
 import './styles/estilos.css';
 import PublicLayout from './Layouts/PublicLayout';
+import PrivateLayout from './Layouts/PrivateLayout';
 function App () {
   return (
     <Router>
@@ -16,7 +17,9 @@ function App () {
           <Registro/>
         </Route>
         <Route path='/admin'>
+         <PrivateLayout>
           <Admin/>
+        </PrivateLayout>
         </Route>
         <Route path='/'>
           <PublicLayout>
