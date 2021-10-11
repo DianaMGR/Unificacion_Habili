@@ -7,17 +7,17 @@ import './styles/estilos.css';
 import PublicLayout from './Layouts/PublicLayout';
 import PrivateLayout from './Layouts/PrivateLayout';
 import AuthLayout from './Layouts/AuthLayout';
-import Vehiculos from './pages/admin/Vehiculos';
+import Productos from './pages/admin/Productos';
 import Cliente from './pages/admin/Cliente';
 function App () {
   return (
     <Router>
       <Switch>
-        <Route path={['/admin','/admin/vehiculos','/admin/clientes']}>
+        <Route path={['/admin','/admin/Productos','/admin/clientes']}>
           <PrivateLayout>
             <Switch>
-            <Route path='/admin/vehiculos'>
-              <Vehiculos />
+            <Route path='/admin/productos'>
+              <Productos />
             </Route>
             <Route path='/admin/clientes'>
               <Cliente />
@@ -28,7 +28,7 @@ function App () {
             </Switch>
           </PrivateLayout>
         </Route>
-        <Route path={['/Login','/registro']}>
+        <Route path={['/login', '/registro']}>
           <AuthLayout>
             <Switch>
             <Route path='/login'>
