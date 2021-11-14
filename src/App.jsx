@@ -1,3 +1,4 @@
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Registro from './pages/Registro';
 import Login from './pages/Login';

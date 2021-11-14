@@ -1,11 +1,18 @@
 import Sidebar from "../components/Sidebar";
+import SidebarResponsive from '../components/SidebarResponsive';
 const PrivateLayouts = ({children}) => {
     return (
         <div className="flex w-screen h-screen" >
+        
+        <div className='flex flex-col lg:flex-row flex-nowrap h-full w-full'> 
        <Sidebar/>
-      <main className='flex w-full bg-blue-400 overflow-y-scroll'> {children}</main>     
+       <SidebarResponsive/>
+              
+      <main className='flex w-full overflow-y-scroll items-center justify-center'>
+           {children}</main>     
+    </div>
     </div>
     );
 };
 
-export default PrivateLayouts
+export default PrivateLayouts;
