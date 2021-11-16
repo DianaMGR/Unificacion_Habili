@@ -12,10 +12,15 @@ import AuthLayout from './Layouts/AuthLayout';
 import Productos from './pages/admin/Productos';
 import Cliente from './pages/admin/Usuarios';
 import Test from './pages/admin/Test';
+import {Auth0Provider} from '@auth0/auth0-react'
 function App () {
  
   return (
-
+<Auth0Provider
+domain="fivetic.us.auth0.com"
+clientId="SP8226jPjQflThoZPO6v3GRDydPOWBRe"
+redirectUri={window.location.origin}
+>
     <div className='App'>
     <Router>
       <Switch>
@@ -62,6 +67,7 @@ function App () {
     </Router>
     
   </div>
+  </Auth0Provider>
   );  
   }
    export default App;
