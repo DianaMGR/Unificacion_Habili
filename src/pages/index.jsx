@@ -1,33 +1,38 @@
-import Footer from "../components/Footer"
-
 function Index(){
     return(
-   <div>     
-    <body>
-    <header>
-    <nav class="navegacion">
-           <ul class="menu">
-                        <li>
-                            <a href="#">Usuarios</a>
-                        </li>
-                        <li>
-                            <a href="#">Productos</a>
-                        </li>
-                        <li>
-                            <a href="#">ventas</a>
-                        </li>	
-                        <li>
-                            <a href="#">Clientes</a>
-                        </li>
-                        <li>
-                            <a href="#">Salir</a>
-                        </li>
-            </ul>
+       
+ 
+        <div class="content-all">
+            <header>
+                <div classNmae="buscador">
+                    <input placeholder='Buscar' />
+                    <i className='fas fa-search botonGenerico iconoBusqueda'></i>
+
+                </div>    
+
+                 <h2>FT Software Easy Access</h2>
+            </header>
+   
+            
+            
+            <main/> 
+            <input type="checkbox" id="check"/>
+            <label for="check" class="icon-menu">Menu</label>       
+            <nav class="menu">
+                <ul>
+                    <li>Uusarios</li>
+                    <li>Productos</li>
+                    <li>Ventas</li>
+                    
+                </ul>
             </nav>
-        </header>
-    </body>  
-    <Footer />  
-    </div>
+            
+           
+        </div>
+    
+
+
+    
     )
 }
 
